@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TV_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ET_input"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:gravity="center"
+        android:layout_margin="14dp"
+        android:textColor="@color/purple_500"
+        app:layout_constraintTop_toBottomOf="@id/TV_hello"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="Autofill,HardcodedText,LabelFor,TextFields" />
+
+    <Button
+        android:id="@+id/BTN_click"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Click me"
+        android:clickable="true"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@id/ET_input"
+        tools:ignore="HardcodedText"
+        android:focusable="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
